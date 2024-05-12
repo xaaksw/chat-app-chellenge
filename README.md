@@ -33,6 +33,8 @@ We want to build a chat app , 3 main entities as a deafult , Application , chat 
   
 ## High Level Design 
 ![High Level Design](https://github.com/xaaksw/chat-app-chellenge/blob/master/high-level-design.jpeg)
+## DB Design 
+![DB Design](https://github.com/xaaksw/chat-app-chellenge/blob/master/db-design.jpg)
 
 ## API Design
 ### Application Api's
@@ -96,5 +98,3 @@ We want to build a chat app , 3 main entities as a deafult , Application , chat 
 - Response status : 204
 ``` 
 
-## DB Design 
-![DB Design](https://github.com/xaaksw/chat-app-chellenge/blob/master/db-design.jpg)

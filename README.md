@@ -48,9 +48,9 @@ We want to build a chat app , 3 main entities as a deafult , Application , chat 
 - ResponseBody: "token" : "xyzksja", "name" : "xaakswIphone","chatCount" : 10
 
 #### Update Application(update name): 
-- EndPoint Url :  PATCH /api/applications/{token}
-- Body: "name":"AhmedIphone",
-- Response status : 200
+- EndPoint Url :  `PATCH /api/applications/{token}`
+- Body: `"name":"AhmedIphone"`,
+- Response status : `200`
 
 ### Chat Api's
 #### Create Chat: 

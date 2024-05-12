@@ -97,4 +97,4 @@ We want to build a chat app , 3 main entities as a deafult , Application , chat 
 ``` 
 
 ## DB Design 
-![DB Design](https://github.com/xaaksw/chat-app-chellenge/blob/master/db-design.jpeg)
+![DB Design](https://github.com/xaaksw/chat-app-chellenge/blob/master/db-design.jpg)

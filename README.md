@@ -35,6 +35,40 @@ We want to build a chat app , 3 main entities as a deafult , Application , chat 
 ![High Level Design](https://github.com/xaaksw/chat-app-chellenge/blob/master/high-level-design.jpeg)
 
 ## API Design
+### Application Api's
+#### Create Application: 
+- EndPoint Url :  POST /api/applications
+- Body : "name" : "XaakswIphone"
+- Response status : 201
+- ResponseBody: "token" : "xyzksja", "name" : "xaakswIphone"
+
+#### Read Application(getChats): 
+- EndPoint Url :  GET /api/applications/{token}
+- Response status : 200
+- ResponseBody: "token" : "xyzksja", "name" : "xaakswIphone","chatCount" : 10
+
+#### Update Application(update name): 
+- EndPoint Url :  PATCH /api/applications/{token}
+- Body: "name":"AhmedIphone",
+- Response status : 200
+
+### Chat Api's
+#### Create Chat: 
+- EndPoint Url :  POST /api/applications/{token}/chats
+- Body : "name" : "XaakswChat" // idk if it's allowed to do this
+- Response status : 201
+- ResponseBody: "chatNumber":1
+
+#### Read Chat(getMessages): 
+- EndPoint Url :  GET /api/applications/{token}/chats/{chatNumber}
+- Response status : 200
+- ResponseBody: "chatNumber":1,"name":"XaakswChat","messagesCount" : 20
+
+#### Update Chat(update name): 
+- EndPoint Url :  PATCH /api/applications/{token}/chats/{chatNumber}
+- Body: "name":"AhmedChat",
+- Response status : 200
+
 
 ## DB Design 
 

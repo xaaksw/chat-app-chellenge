@@ -51,9 +51,9 @@ We want to build a chat app , 3 main entities as a deafult , Application , chat 
 ```
 #### Update Application(update name): 
 ```
-- EndPoint Url :  PATCH /api/applications/{token}
+- EndPoint Url :  PUT /api/applications/{token}
 - Body: "name":"AhmedIphone",
-- Response status : 200
+- Response status : 204
 ```
 ### Chat Api's
 #### Create Chat: 
@@ -71,11 +71,30 @@ We want to build a chat app , 3 main entities as a deafult , Application , chat 
 ```
 #### Update Chat(update name): 
 ```
-- EndPoint Url :  PATCH /api/applications/{token}/chats/{chatNumber}
+- EndPoint Url :  PUT /api/applications/{token}/chats/{chatNumber}
 - Body: "name":"AhmedChat",
-- Response status : 200
+- Response status : 204
 ```
-
+### Messages Api's
+#### Create Message: 
+```
+- EndPoint Url :  POST /api/applications/{token}/chats/{chatNumber}/messages
+- Body : "body" : "Hello world!"
+- Response status : 201
+- ResponseBody: "messageNumber":1
+```
+#### Read Chat(getMessageBody): 
+```
+- EndPoint Url :  GET /api/applications/{token}/chats/{chatNumber}/messages/{messageNumber}
+- Response status : 200
+- ResponseBody: "messageNumber":1,"body":"hello world"
+```
+#### Update Message(update message body): 
+```
+- EndPoint Url :  PUT /api/applications/{token}/chats/{chatNumber}/messages/{messageNumber}
+- Body: "body" : "Hey Man!",
+- Response status : 204
+``` 
 
 ## DB Design 
 
